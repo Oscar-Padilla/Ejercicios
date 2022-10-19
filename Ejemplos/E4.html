@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="Ejercicios.html">Home</a>
+            <a class="navbar-brand" href="" onclick="history.go(-1)">Regresar</a>
+            <a class="navbar-brand" href="E5.html">Siguiente</a>
+            <button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="dropdown border-0" style="--bs-body-bg: var(--bs-indigo);">
+                    <a class="navbar-brand" aria-expanded="false" data-bs-toggle="dropdown" href="#" target="_blank" style="--bs-body-bg: var(--bs-navbar-brand-hover-color);">Ejercicios</a>
+                    <div class="dropdown-menu dropdown-menu-dark">
+                        <a class="dropdown-item" href="E1.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 1</a>
+                        <a class="dropdown-item" href="E2.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 2</a>
+                        <a class="dropdown-item" href="E3.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 3</a>
+                        <a class="dropdown-item" href="E4.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 4</a>
+                        <a class="dropdown-item" href="E5.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 5</a>
+                        <a class="dropdown-item" href="E6.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 6</a>
+                        <a class="dropdown-item" href="E7.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 7</a>
+                        <a class="dropdown-item" href="E8.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 8</a>
+                        <a class="dropdown-item" href="E9.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 9</a>
+                        <a class="dropdown-item" href="E10.html" style="--bs-body-color: #ffffff;color: rgb(255,255,255);">Ejercicio 10</a>
+                    </div>
+                </div>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link">
+                        <img src="../assets/img/logo_tecnm.png" width="200" style="filter: invert(100%) saturate(0%);">
+                        <img src="../assets/img/Picsart_22-10-12_16-34-44-824.png" width="230">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h6 class="brand-heading" style="font-size: 380%;">Ejercicio 4</h6>
+                        <p style="font-size: 135%;">
+                            Pedir confirmación para visitar una página.
+                        </p>
+                        <script lang="JavaScript">
+                            function confirmar() 
+                            {
+                                return confirm("Esta página contiene contenido para mayores de 18 años. ¿Lo cumples?")
+                            }
+                        </script>
+                        <a href="http://www.starwars.com/" onclick="return confirmar()" style="font-size: 125%;">
+                            Enlace a la página oficial de Star Wars
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="map-clean"></div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+</html>
